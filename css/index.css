@@ -63,7 +63,7 @@ body {
 .content--card {
   width: 100%;
   background-color: lightblue;
-  padding: 30px 0px; }
+  padding: 0; }
 
 .content--maps_img {
   height: 100%;
@@ -73,19 +73,21 @@ body {
   background-size: cover;
   background-image: url("../images/banner-5.jpeg"); }
 
-.card__info {
-  margin: 15px 0 15px 0;
-  width: 250px;
-  padding: 20px;
-  background-color: #FFFFFF; }
-  .card__info img {
-    width: 100px;
-    height: 100px;
-    border-radius: 150px; }
-  .card__info_title {
-    padding: 15px 0;
-    font-size: 1.25rem;
-    font-family: "Open Sans"; }
+.card {
+  margin: 0 35px; }
+  .card__info {
+    margin: 15px 0;
+    width: 250px;
+    padding: 20px;
+    background-color: #FFFFFF; }
+    .card__info img {
+      width: 100px;
+      height: 100px;
+      border-radius: 150px; }
+    .card__info_title {
+      padding: 15px 0;
+      font-size: 1.25rem;
+      font-family: "Open Sans"; }
 
 .title_work {
   font-size: 2.5em;
@@ -205,8 +207,6 @@ body {
     height: 130px; } }
 
 @media only screen and (min-width: 1024px) {
-  .content--card {
-    padding: 30px 100px; }
   .item--card, .item--img2 {
     margin: 0 35px;
     height: 200px; }
