@@ -7,10 +7,10 @@
 
 body{
     font-family: $text;
+    overflow-x:hidden;
 }
 
 .navbar{
-    width: 100%;
     min-height: 15vh;
     background-color: $ligthgreen;
     padding: 10px;
@@ -30,7 +30,7 @@ body{
 
 .content{
     &--fresh{
-        width: 100%;
+        
         background-color: $ligthgreen; 
 
         &_img{
@@ -48,7 +48,6 @@ body{
     }
 
     &--promise{
-        width: 98.8vw;
         background-color: lightgray;
        
        &_img{
@@ -60,7 +59,6 @@ body{
     }
 
     &--healt{
-        width: 98.8vw;
         &_img{
             height: 400px;
             background-position: center center;
@@ -80,7 +78,6 @@ body{
     }
 
     &--happy{
-        width: 100%;
         &_img{
             height: 550px;
             background-position: center center;
@@ -95,10 +92,9 @@ body{
     }
 
     &--maps{
-        width: 100%;
         &_img{
-            height: 300px;
-            width: 360px;;
+            height: 100%;
+            width: 100%;
             min-height: 450px;
             background-position: center center;
             background-size: cover;
@@ -110,8 +106,8 @@ body{
 
 
 .card{
-
     &__info{
+        margin: 15px 0 15px 0;
         width: 250px;
         padding: 20px;
         background-color: $white;
