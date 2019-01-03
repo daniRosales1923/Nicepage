@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0; }
 
-body {
+body, html {
   font-family: "Open Sans";
   overflow-x: hidden; }
 
@@ -13,7 +13,6 @@ body {
   margin-bottom: 3px; }
   .navbar_logo {
     height: 55px;
-    max-height: 80px;
     padding: 0 10%; }
   .navbar_burger {
     cursor: pointer;
@@ -107,7 +106,7 @@ body {
     color: #e2c178; }
 
 .item--info__content {
-  padding: 50px 40px; }
+  padding: 39px; }
 
 .item__title-banner {
   position: absolute;
@@ -200,6 +199,11 @@ body {
     background-image: url(../images/grid-7.jpeg); }
 
 @media only screen and (min-width: 584px) {
+  .navbar_logo {
+    height: 80px; }
+  .navbar_burger {
+    cursor: pointer;
+    color: #61A734; }
   .item--card, .item--img2 {
     margin: 0 15px;
     height: 200px; }
@@ -207,6 +211,8 @@ body {
     height: 130px; } }
 
 @media only screen and (min-width: 1024px) {
+  .navbar_logo {
+    height: 75px; }
   .item--card, .item--img2 {
     margin: 0 35px;
     height: 200px; }
@@ -214,10 +220,14 @@ body {
     height: 130px;
     padding: 15px; }
   .item__title-banner {
-    left: 120px; }
+    left: 105px; }
   .item__subtitle-banner {
     font-size: 5em; }
     .item__subtitle-banner-l {
-      font-size: 5em; }
+      font-size: 4em; }
     .item__subtitle-banner-3 {
-      font-size: 5em; } }
+      font-size: 4em; } }
+
+@media only screen and (min-width: 1440px) {
+  .item__title-banner {
+    left: 190px; } }

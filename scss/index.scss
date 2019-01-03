@@ -5,7 +5,7 @@
     margin: 0;
 }
 
-body{
+body,html{
     font-family: $text;
     overflow-x:hidden;
 }
@@ -18,7 +18,6 @@ body{
 
     &_logo{
         height: 55px;
-        max-height: 80px;
         padding: 0 10%;
     }
 
@@ -151,7 +150,7 @@ body{
 .item {
     &--info{
         &__content{
-            padding: 50px 40px;
+            padding: 39px;
         }
     }
 
@@ -283,6 +282,16 @@ body{
 }
 
 @media only screen and (min-width: 584px){
+    .navbar{
+        &_logo{
+            height: 80px;
+        }
+    
+        &_burger {
+            cursor: pointer;
+            color: $green;
+        }
+    }
     .item{
         &--card,&--img2{
             margin: 0 15px;
@@ -297,6 +306,11 @@ body{
 }
 
 @media only screen and (min-width: 1024px){
+    .navbar{
+        &_logo{
+            height: 75px;
+        }
+    }
 
     .item{
         &--card,&--img2{
@@ -311,21 +325,27 @@ body{
         }
 
         &__title-banner{
-            left: 120px;
+            left: 105px;
         }
 
         &__subtitle-banner{
             font-size: 5em;
 
             &-l{
-                font-size: 5em;
+                font-size: 4em;
             }
     
             &-3{
-                font-size: 5em;
+                font-size: 4em;
             }
         }
     }
 }
 
-
+@media only screen and (min-width: 1440px){
+    .item{
+        &__title-banner{
+            left: 190px;
+        }
+    }
+}
